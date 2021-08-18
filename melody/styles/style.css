@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+  url("BebasNeueRegular/BebasNeueRegular.woff2") format("woff2"),
+  url("BebasNeueRegular/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: #635854;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #3596F5;
+}
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.navbar-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  text-align: center;
+
+}
+.navbar-item{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar-link{
+  text-decoration: none;
+  color:#fff;
+}
+.navbar-text {
+  display: block;
+  color:#fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+
+}
+.navbar-contacts{
+  text-align: right;
+}
+.navbar-phone{
+  color:#fff;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    display: flex;
+}
+.main-info{
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-image path {
+  opacity: 0;
+}
+
+.home-image path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.main-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 37px;
+  line-height: 37px;
+  font-weight: normal;
+  color: #635854;
+  margin: 0;
+}
+.counter {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #635854;
+  font-size: 124px;
+  margin-top: 10px;
+
+} 
+button {
+  border: none;
+}
+.button-primary {
+  background: #3596F5;
+  border-radius: 6px;
+  color:#fff;
+  padding: 16px 36px;
+  cursor: pointer;
+}
+.counter-button {
+  background: #fff;
+  cursor: pointer;
+
+}
