@@ -6,8 +6,9 @@ $(document).ready(function () {
   let usCurrentFloor;
   let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
   let event = "click";
-  if (iOS != null)
+  if (iOS != null){
     event = "touchstart";
+  };
 
   $('.home-image path').on(event, function () {
     $('.home-image path').removeClass('current-floor');
