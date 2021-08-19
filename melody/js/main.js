@@ -16,7 +16,7 @@ $(document).ready(function () {
     $(".counter").text(currentFloor);
   });
 
-  counterUp.on("click", function () {
+  counterUp.on(event, function () {
     if (currentFloor < 18) {
       currentFloor++;
       usCurrentFloor = currentFloor.toLocaleString('en-US', {
@@ -28,7 +28,7 @@ $(document).ready(function () {
       $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
     }
   })
-  counterDown.on("click", function () {
+  counterDown.on(event, function () {
     if (currentFloor > 2) {
       currentFloor--;
       usCurrentFloor = currentFloor.toLocaleString('en-US', {
