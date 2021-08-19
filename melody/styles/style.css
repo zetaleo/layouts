@@ -82,9 +82,9 @@ body {
   overflow: auto;
 }
 
-.home-image {
+/* .home-image {
   max-width: 100%;
-}
+} */
 
 .main-info {
   display: flex;
