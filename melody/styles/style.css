@@ -1,5 +1,5 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -79,13 +79,13 @@ body {
 }
 
 .main-image {
-  padding: 5% 0;
-  width: 100vw;
+  padding: 7% 0;
+  /* width: 100vw; */
 }
 
-.home-image {
+/* .home-image {
   width: 100vw;
-}
+} */
 
 .main-info {
   display: flex;
@@ -94,7 +94,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 10%;
-  min-height: 350px;
+  min-height: 400px;
 }
 
 .home-image path {
@@ -114,6 +114,8 @@ path.current-floor {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 7% 0;
+
 }
 
 .main-title {
