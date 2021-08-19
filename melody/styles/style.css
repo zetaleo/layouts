@@ -151,4 +151,5 @@ button {
 .counter-button {
   background: #fff;
   cursor: pointer;
+  padding: 0;
 }
