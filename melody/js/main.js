@@ -6,13 +6,13 @@ $(document).ready(function () {
   let usCurrentFloor;
 
   $('.home-image path').on("click", function () {
+    $('.home-image path').removeClass('current-floor');
     currentFloor = $(this).attr('data-floor');
     $(".counter").text(currentFloor);
     usCurrentFloor = currentFloor.toLocaleString('en-US', {
       minimumIntegerDigits: 2,
       useGrouping: false
     });
-    $('.home-image path').removeClass('current-floor');
     $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
 
   });
