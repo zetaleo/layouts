@@ -72,19 +72,18 @@ body {
 }
 
 .main {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-image {
-  padding: 7% 0;
-  /* width: 100vw; */
+  margin: 7% auto;
+  overflow: auto;
 }
 
 /* .home-image {
-  width: 100vw;
+
 } */
 
 .main-info {
@@ -93,8 +92,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 10%;
-  min-height: 600px;
+  margin: 7% auto;
 }
 
 .home-image path {
