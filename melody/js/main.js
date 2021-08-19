@@ -4,18 +4,15 @@ $(document).ready(function () {
   let counterUp = $('.counter-up');
   let counterDown = $('.counter-down');
   let usCurrentFloor;
-  // let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  // let event = "click";
+  let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  let event = "click";
+  if (iOS != null)
+    event = "touchstart";
 
-  $('.home-image path').on("click", function () {
+  $('.home-image path').on(event, function () {
     $('.home-image path').removeClass('current-floor');
     currentFloor = $(this).attr('data-floor');
     $(".counter").text(currentFloor);
-    // usCurrentFloor = currentFloor.toLocaleString('en-US', {
-    //   minimumIntegerDigits: 2,
-    //   useGrouping: false
-    // });
-    // $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
   });
 
   counterUp.on("click", function () {
