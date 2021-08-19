@@ -199,7 +199,7 @@ header .main-menu li a:hover {
 }
 
 .logo img {
-  height: 20px;
+  height: 2em;
 }
 
 .welcome {
@@ -811,9 +811,9 @@ footer .footer-bottom .copyright {
   .trips .container-trips .trip:not(first-child) {
     margin-bottom: 8px;
   }
-  .logo img {
+  /* .logo img {
     height: 16px;
-  }
+  } */
   footer .footer-top .social li {
     margin-left: 16px;
   }
