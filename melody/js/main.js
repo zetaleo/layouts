@@ -6,7 +6,7 @@ $(document).ready(function () {
   let usCurrentFloor;
   let iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
   let event = "click";
-  if (iOS != null){
+  if (iOS){
     event = "touchstart";
   };
 
