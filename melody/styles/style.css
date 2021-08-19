@@ -99,11 +99,11 @@ body {
 
 .home-image path {
   opacity: 0;
+  cursor: pointer;
 }
 
 .home-image path:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
 path.current-floor {
