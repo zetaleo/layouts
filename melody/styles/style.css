@@ -107,7 +107,7 @@ body {
   cursor: pointer;
 }
 
-path.current-floor {
+.current-floor {
   opacity: 1;
   cursor: pointer;
 }
