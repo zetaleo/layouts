@@ -97,7 +97,6 @@ body {
 
 .home-image path {
   opacity: 0;
-  cursor: pointer;
 }
 
 .home-image path:hover {
@@ -105,9 +104,19 @@ body {
   cursor: pointer;
 }
 
-path.current-floor {
+.home-image path.current-floor {
   opacity: 1;
   cursor: pointer;
+}
+
+.flats path.current-flat {
+  opacity: 1;
+  cursor: pointer;
+}
+
+a.flat-link-on {
+  color: #3596f5;
+  font-size: 17px;
 }
 
 .counter-group {
@@ -126,7 +135,7 @@ path.current-floor {
   margin: 0;
 }
 
-.counter {
+.floor-counter {
   font-family: 'Bebas Neue', sans-serif;
   color: #635854;
   font-size: 124px;
@@ -135,6 +144,7 @@ path.current-floor {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .button-primary {
@@ -142,12 +152,102 @@ button {
   border-radius: 6px;
   color: #fff;
   padding: 16px 26px;
-  cursor: pointer;
   font-size: 1.5em;
 }
 
 .counter-button {
   background: #fff;
-  cursor: pointer;
   padding: 0;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s;
+}
+.is-open {
+  opacity: 1;
+  transform: scale(1);
+}
+.is-open > .modal-dialog {
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal-dialog {
+  max-width: 1000px;
+  min-height: 565px;
+  background:#fff;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  transform: translateY(-10%);
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+
+}
+.modal-image{
+  background-color: #ebebeb;
+  width: 60%;
+  text-align: center;
+  padding: 50px;
+}
+.flats path {
+  opacity: 0;
+}
+.flats path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.modal-title{
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2em;
+
+}
+.modal-info{
+  padding: 50px 46px;
+  width: 40%;
+
+}
+.flat-list{
+  padding: 0;
+  list-style: none;
+  margin-top: 50px;
+}
+.flat-item{
+  margin-bottom: 18px;
+}
+.flat-link{
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #635854;
+}
+.flat-link:hover {
+  color: #3596f5;
+  font-size: 17px;
+}
+.modal-alert{
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: gray;
+  margin-top: 56px;
+}
+.modal-close-button{
+  position: absolute;
+  top: 38px;
+  right: 28px;
+  background-color:#fff;
 }
