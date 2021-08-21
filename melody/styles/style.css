@@ -72,19 +72,22 @@ body {
 }
 
 .main {
-  /* max-width: 1280px; */
   display: flex;
   flex-wrap: wrap;
 }
 
 .main-image {
   margin: 7% auto;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  justify-items: center;
+
 }
 
-/* .home-image {
-  max-width: 100%;
-} */
+#image01{
+  width: 100%;
+}
 
 .main-info {
   display: flex;
