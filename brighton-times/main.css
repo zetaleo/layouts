@@ -162,7 +162,7 @@ main {
  */
 
 .top-news {
-  height: 300px;
+  /* height: 400px; */
   padding: 1em;
 }
 .news__title {
@@ -178,8 +178,10 @@ main {
 
 .top-news__item {
   border-bottom: 1px solid #e0e0e0;
-  padding: 1em 0;
-  line-height: 19px;
+  /* padding: 1em 0; */
+  line-height: 25px;
+  margin: 24px 0;
+
 }
 
 .top-news__item:before {
