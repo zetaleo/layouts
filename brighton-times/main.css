@@ -58,17 +58,16 @@ ul {
   margin-right: auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .header__logo {
   height: 4.2em;
-  margin: auto;
 }
 
 h1.header__title {
   font-weight: 300;
   font-size: 3.8em;
-  margin: auto;
 }
 /*
  *
