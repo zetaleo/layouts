@@ -20,6 +20,10 @@ body {
   order: 10;
 }
 
+ a#menu svg {
+    width: 0;
+  }
+
 @media screen and (max-width: 700px) {
   .header__logo {
     height: 3.2em;
@@ -30,28 +34,8 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  /*.header__inner {*/
-  /*    justify-content: space-between;*/
-  /*}*/
-  .header__logo {
-    width: 0;
-    height: 0;
-    margin: 0;
-  }
-
-  h1.header__title {
-    font-size: 2.2em;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  .header__logo {
-    width: 0;
-    height: 0;
-    margin: 0;
-  }
-
+ 
   h1.header__title {
     font-size: 1.7em;
   }
@@ -66,6 +50,16 @@ body {
     width: 3.3em;
     fill: #000;
     margin: 0 5px;
+  }
+
+    .header__logo {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  h1.header__title {
+    font-size: 2.2em;
   }
 
   .nav {
@@ -131,12 +125,12 @@ body {
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 900px) {
   main,
   .header__inner,
   .nav,
   .content {
-    width: 800px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
