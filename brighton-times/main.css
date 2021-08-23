@@ -1,0 +1,367 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Common
+ *
+ */
+
+.news__more {
+  float: right;
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  transition: max-height 0.2s;
+}
+
+.header__inner {
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  height: 4.2em;
+  margin: auto;
+}
+
+h1.header__title {
+  font-weight: 300;
+  font-size: 3.8em;
+  margin: auto;
+}
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/main.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 1.1em;
+}
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news {
+  height: 280px;
+  padding: 1em;
+}
+.news__title {
+  font-weight: 400;
+  border-bottom: 1px solid #e0e0e0;
+  line-height: 3em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.news__more {
+  text-transform: lowercase;
+}
+
+.top-news__item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1em 0;
+  line-height: 19px;
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  /*border-bottom: none;*/
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+/*
+ *
+ * Sport Scores
+ *
+ */
+
+.scores {
+  padding-top: 1em;
+}
+
+.scores__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores__table th,
+.scores__table td {
+  padding: 1em;
+}
+
+.scores__table th {
+  color: #fff;
+  font-weight: 300;
+  background-color: #78909c;
+}
+
+.scores__table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.scores__table tr:nth-child(even) td {
+  background-color: #eceff1;
+}
+
+.scores__table td.winner {
+  font-weight: bold;
+}
+
+.scores__table td:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table td:nth-child(2),
+.scores__table td:nth-child(5) {
+  text-align: center;
+}
+
+/*
+ *
+ * Weather
+ *
+ */
+
+.weather {
+  padding: 1em;
+}
+
+.weather__location {
+  display: block;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.weather__desc {
+  display: block;
+  font-size: 1.2em;
+}
+
+.weather__today {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.weather__today__image {
+  vertical-align: middle;
+  margin: 8% 0;
+}
+
+.weather__today__temp {
+  font-size: 3em;
+}
+
+.weather__today__deg {
+  font-size: 2em;
+  display: inline;
+}
+
+.weather__next__item {
+  display: inline-block;
+  width: 18%;
+  text-align: center;
+}
+
+.weather__next__item span {
+  display: block;
+}
+
+.weather__next__image {
+  width: 100%;
+}
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+.recent-news {
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 1em;
+  width: 100%;
+  background-color: #eceff1;
+}
+
+footer ul {
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+footer li {
+  box-sizing: border-box;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2em;
+}

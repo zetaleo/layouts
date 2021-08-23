@@ -1,0 +1,153 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+.top-news,
+.scores,
+.weather,
+.recent-news {
+  order: 10;
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo {
+    height: 3.2em;
+  }
+
+  h1.header__title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /*.header__inner {*/
+  /*    justify-content: space-between;*/
+  /*}*/
+  .header__logo {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  h1.header__title {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__logo {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  h1.header__title {
+    font-size: 1.7em;
+  }
+
+  .hero article {
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  a#menu svg {
+    width: 3.3em;
+    fill: #000;
+    margin: 0 5px;
+  }
+
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This transform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.1s ease;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+
+  .header__menu svg {
+    width: 32px;
+    fill: #e0e0e0;
+  }
+
+  footer a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .hero {
+    order: 0;
+    width: 100%;
+  }
+
+  .top-news {
+    order: 1;
+    width: 100%;
+  }
+
+  .scores {
+    order: 2;
+    width: 100%;
+  }
+
+  .weather {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main,
+  .header__inner,
+  .nav,
+  .content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .scores {
+    order: 3;
+    width: 50%;
+  }
+
+  .weather {
+    order: 2;
+    width: 50%;
+  }
+}
